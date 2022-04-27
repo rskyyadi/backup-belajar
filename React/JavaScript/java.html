@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TAI AYAM</title>
+        <link rel="stylesheet" href="java.css">
+        <script type="text/javascript" src="java.js"></script>
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <style type="text/css">@font-face {font-family: gua; src: url(NunitoSans-Light.ttf);}</style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="kotak">
+                <label>
+                    <img src="logotok.png" style="width: 8rem;">
+                    <h5><b>LOGIN</b></h5>
+                    <p>Rskyy Official Store</p>
+                </label>
+
+                <form class="form">
+                    <input type="text" id="nama" placeholder="Masukkan Nama Anda...." name="Nama">
+                    <input class="satu" type="text" id="alamat" placeholder="Masukkan Alamat Anda...." name="Alamat">
+                    <input class="satu" type="email" id="email" placeholder="Masukkan Email Anda...." name="Email">
+                </form>
+
+                <div class="tombol">
+                    <a href="http://www.facebook.com"><button type="button"><b>Login</b></button></a>
+                </div>
+                <div class="tombol1">
+                    <a href="http://www.facebook.com"><button type="button"><b>Logout</b></button></a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+            $("#nama").keyup(function(){
+            $("#alamat").fadeIn("slow");
+                });
+
+            $("#alamat").keyup(function()
+            {
+
+            $("#email").fadeIn("slow");
+                    });
+                });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+@use 'layout';
+@use 'components';
+
+// BACKGROUND COLOR
+$bg-blue: #3b82f6;
+$bg-green: #10b981;
+$bg-red: #ef4444;
+$bg-yellow: #f59e0b;
+$bg-purple: #6366F1;
+$bg-grey: #f3f4f6;
+$bg-dark-grey: #374151;
+$bg-dark: #111827;
+
+// FONTS
+$font-base: 'Roboto', sans-serif;
+
+$theme-colors: (
+  "primary": $bg-blue,
+  "secondary": $bg-dark-grey,
+  "success": $bg-green,
+  "danger": $bg-red,
+  "warning": $bg-yellow,
+  "info": $bg-purple,
+  "light": $bg-grey,
+  "dark": $bg-dark,
+);
+
+$font-family-base: $font-base;
+
+// BUTTON
+$btn-font-size: 14px;
+$btn-font-size-sm: 12px;
+$btn-font-size-md: 14px;
+$btn-font-size-lg: 16px;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background-color: $bg-grey;
+  font-size: 16px !important;
+}

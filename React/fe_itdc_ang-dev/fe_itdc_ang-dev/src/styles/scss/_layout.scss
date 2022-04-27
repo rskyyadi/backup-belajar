@@ -1,0 +1,160 @@
+// BACKGROUND COLOR
+$bg-blue: #3B82F6;
+$bg-green: #10B981;
+$bg-red: #EF4444;
+$bg-yellow: #F59E0B;
+$bg-purple: #8B5CF6;
+$bg-grey: #F3F4F6;
+$bg-dark-grey: #374151;
+$bg-dark: #111827;
+
+// FONTS
+$font-poppins: 'Poppins', sans-serif;
+
+
+.layout-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  min-width: 300px;
+  margin-left: 0;
+
+  &.open {
+    margin-left: -300px;
+  }
+}
+
+.sidebar .logo {
+  height: 130px;
+}
+
+.sidebar-toggle {
+  cursor: pointer;
+  display: none;
+}
+
+.sidebar-menu {
+  font-size: 14px !important;
+  color: $bg-dark-grey !important;
+  text-decoration: none !important;
+
+  &:hover {
+    opacity: 1;
+    background-color: $bg-grey;
+    cursor: pointer;
+  }
+
+  &.active {
+    color: white !important;
+    background-color: $bg-blue;
+    opacity: 1;
+
+    &:hover {
+      background-color: $bg-blue !important;
+    }
+  }
+
+  &.open {
+    opacity: 1;
+    background-color: $bg-grey;
+  }
+}
+
+.sidebar-menu-items {
+  // padding-left: 30px !important;
+  font-size: 12px !important;
+  color: $bg-dark-grey !important;
+  text-decoration: none !important;
+  
+  &.active {
+    color: white !important;
+    background-color: $bg-blue;
+    opacity: 1;
+
+    &:hover {
+      background-color: $bg-blue !important;
+    }
+  }
+
+  &:hover {
+    background-color: $bg-grey !important;
+    opacity: 1;
+  }
+}
+
+.navbar {
+  width: 100% !important;
+  height: 80px !important;
+  min-height: 80px;
+}
+
+.navbar .account-info {
+  display: block;
+}
+
+.navbar .avatar {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+}
+
+.layout-content {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media (max-width: 576px) {
+  .navbar .account-info {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper-dark {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: .2;
+    z-index: 9000;
+  }
+
+  .sidebar {
+    position: absolute;
+    transform: translateX(-300px);
+    z-index: 10000;
+    margin-left: 0;
+  }
+
+  .sidebar.open {
+    transform: translateX(0px);
+    margin-left: 0;
+  }
+
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .sidebar .logo {
+    margin-bottom: 30px;
+  }
+
+  .navbar {
+    height: 60px !important;
+    min-height: 60px !important;
+  }
+}

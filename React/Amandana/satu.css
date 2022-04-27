@@ -1,0 +1,17 @@
+.st:hover{
+    background-color: rgb(104, 12, 250);
+}
+
+.dhua{
+    background-color: #55ACEE;
+    width: 80px;
+}
+
+.nav-item .nav-link .btn{
+    background-color: rgb(101, 103, 219); 
+    font-size: 13px;
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    padding-right: 4px; 
+    padding-left: 4px;
+}

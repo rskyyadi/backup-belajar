@@ -1,0 +1,20 @@
+body {background-image: linear-gradient(to bottom right, #e6e1e1, #706aa1);}
+.container {display: flex; justify-content: center; margin-top: 10%;}
+.kotak {background-color: rgb(83, 83, 83); height: 450px; width: 350px;border-radius: 20px; font-family: gua; display: flex;
+        flex-direction: column; justify-content: center; box-shadow: rgb(149, 148, 207) -3px 5px 5px 5px;}
+.kotak:hover {height: 451px; width: 351px; transition-duration: 0.5s;}
+.kotak img {margin-top: -80px;}
+.kotak h5 {font-size: 28px; margin-top: -20px;}
+.kotak p {margin-top: -45px;}
+.kotak label {text-align: center; color: white; margin-bottom: 10px;}
+.kotak .form {text-align: center;}
+.form input {padding: 7px; border: none; border-radius: 20px; margin-bottom: 5px; padding-left: 15px; padding-right: 100px;}
+.form input:active {padding: 8px; padding-left: 16px; padding-right: 101px; border-color: blue;}
+.form .satu {display: none;}
+.tombol button {background-color: greenyellow; color: rgb(83, 83, 83); font-size: 13px; padding: 9px; padding-left: 14px; padding-right: 14px; border: none;
+                border-radius: 9px; float: right; margin-left: 260px; margin-top: 55px; position: fixed;}
+.tombol button:hover {background-color: rgb(159, 231, 50); cursor: pointer; padding: 10px; padding-left: 15px; 
+                      padding-right: 15px; transition-duration: 0.3s;}
+.tombol1 button {background-color: rgb(255, 130, 47); color: rgb(83, 83, 83); font-size: 13px; padding: 9px; padding-left: 14px; padding-right: 14px; border: none;
+                border-radius: 9px; float: right; margin-left: 180px; margin-top: 55px; position: fixed;}
+.tombol1 button:hover {background-color: rgb(233, 129, 59); cursor: pointer; padding: 10px; padding-left: 15px; padding-right: 15px; transition-duration: 0.3s;}
